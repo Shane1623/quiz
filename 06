@@ -1,12 +1,13 @@
-public static void isprime(int n){
-  int i=2；
-  for(；i<n；i++){
-      if(n%i==0){
-       System.out.println(n+"NO")；
- break；
-}
-}
-if(n==i){
-  System.out.println(n+"YES")；
-}
+public static boolean isPrimeNumber(final int n) {
+    if (n > 2) {
+        for (int i = 2; i < n; ++i) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+ 
+        return true;
+    } else {
+        return n == 2;
+    }
 }
