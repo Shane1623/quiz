@@ -1,0 +1,144 @@
+// app9_19, 巢狀類別
+ class Namecard // 外部類別
+{
+          private String name;
+          private String address;
+          private PPhone data; 
+
+public Namecard(String s1,String s2,PPhone data) // CBox 建構元
+{
+編號=s1;
+色彩=s2;
+
+data=new PPhone(data); // 用 new 建立 CColor 物件
+ }
+public Namecard(String string, String string2, String string3) {
+}
+class PPhone // 內部類別
+{
+private Namecard.PPhone phone;
+
+public PPhone(Namecard.PPhone data) // CColor 建構元
+{
+phone=data; 
+ }
+public void show_phone() // 顯示顏色
+{
+System.out.println("phone="+phone);
+}
+}
+public void show() // 外部類別 CBox 的成員函數
+{
+System.out.println("編號="+"1002");
+System.out.println("色彩="+"黑色);
+System.out.println("價格="+"500");
+PPhone pho;
+
+// System.out.println("color="+cr.color);
+ }
+}
+
+public class app9_19
+{
+ public static void main(String args[])
+{
+    Namecard first=new Namecard ("編號="+"1002","色彩="+"黑色","價格="+"500");
+ first.show();
+}
+} 
+// app9_19, 巢狀類別
+ class Namecard // 外部類別
+{
+          private String name;
+          private String address;
+          private PPhone data; 
+
+public Namecard(String s1,String s2,PPhone data) // CBox 建構元
+{
+編號=s1;
+色彩=s2;
+
+data=new PPhone(data); // 用 new 建立 CColor 物件
+ }
+public Namecard(String string, String string2, String string3) {
+}
+class PPhone // 內部類別
+{
+private Namecard.PPhone phone;
+
+public PPhone(Namecard.PPhone data) // CColor 建構元
+{
+phone=data; 
+ }
+public void show_phone() // 顯示顏色
+{
+System.out.println("phone="+phone);
+}
+}
+public void show() // 外部類別 CBox 的成員函數
+{
+System.out.println("編號="+"2003");
+System.out.println("色彩="+"黃色);
+System.out.println("價格="+"650");
+PPhone pho;
+
+// System.out.println("color="+cr.color);
+ }
+}
+
+public class app9_19
+{
+ public static void main(String args[])
+{
+    Namecard first=new Namecard ("編號="+"1002","色彩="+"黑色","價格="+"500");
+ first.show();
+}
+} 
+// app9_19, 巢狀類別
+ class Namecard // 外部類別
+{
+          private String name;
+          private String address;
+          private PPhone data; 
+
+public Namecard(String s1,String s2,PPhone data) // CBox 建構元
+{
+編號=s1;
+色彩=s2;
+
+data=new PPhone(data); // 用 new 建立 CColor 物件
+ }
+public Namecard(String string, String string2, String string3) {
+}
+class PPhone // 內部類別
+{
+private Namecard.PPhone phone;
+
+public PPhone(Namecard.PPhone data) // CColor 建構元
+{
+phone=data; 
+ }
+public void show_phone() // 顯示顏色
+{
+System.out.println("phone="+phone);
+}
+}
+public void show() // 外部類別 CBox 的成員函數
+{
+System.out.println("編號="+"1002");
+System.out.println("色彩="+"黑色);
+System.out.println("價格="+"500");
+PPhone pho;
+
+// System.out.println("color="+cr.color);
+ }
+}
+
+public class app9_19
+{
+ public static void main(String args[])
+{
+    Namecard first=new Namecard ("編號="+"1002","色彩="+"黑色","價格="+"500");
+ first.show();
+}
+} 
