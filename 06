@@ -1,13 +1,33 @@
-public static boolean isPrimeNumber(final int n) {
-    if (n > 2) {
-        for (int i = 2; i < n; ++i) {
-            if (n % i == 0) {
+import java.util.Scanner;
+
+public class PrimeNumberChecker {
+
+    public static boolean is_prime(int number) {
+        if (number <= 1) {
+            return false;
+        }
+        
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
                 return false;
             }
         }
- 
+        
         return true;
-    } else {
-        return n == 2;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("請輸入一個整數: ");
+        int userInput = scanner.nextInt();
+
+        if (is_prime(userInput)) {
+            System.out.println(userInput + " 是質數。");
+        } else {
+            System.out.println(userInput + " 不是質數。");
+        }
+
+        scanner.close();
     }
 }
